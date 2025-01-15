@@ -32,7 +32,7 @@ namespace OrgProtocolW32Handler
                 using (var clientProcess = new Process())
                 {
                     clientProcess.StartInfo.UseShellExecute = false;
-                    clientProcess.StartInfo.FileName = "emacsclientw.exe";
+                    clientProcess.StartInfo.FileName = """c:\emacs\bin\emacsclientw.exe""";
                     clientProcess.StartInfo.ArgumentList.Add(url);
                     clientProcess.StartInfo.CreateNoWindow = true;
 
